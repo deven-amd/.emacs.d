@@ -20,8 +20,11 @@
  '(tooltip-mode nil))
 
 
-(set-foreground-color "white") ;; foreground color - white
-(set-background-color "black") ;; background color - black
+;;(set-foreground-color "white") ;; foreground color - white
+;;(set-background-color "black") ;; background color - black
+
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'dracula t)
 
 ;; M-x list-faces-display to generate a list of faces
 ;; M-x list-colors-display to list some of the colors emacs can display
