@@ -15,7 +15,7 @@
  '(column-number-mode t)
  '(inhibit-startup-screen t)
  '(scroll-bar-mode nil)
- '(tool-bar-mode nil)
+ '(if window-system (tool-bar-mode nil))
  '(menu-bar-mode nil)
  '(tooltip-mode nil))
 
