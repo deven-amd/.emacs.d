@@ -15,7 +15,7 @@
  '(column-number-mode t)
  '(inhibit-startup-screen t)
  '(scroll-bar-mode nil)
- '(if window-system (tool-bar-mode nil))
+ ;; '(if (display-graphic-p) (tool-bar-mode nil) (message "Not in GUI!"))
  '(menu-bar-mode nil)
  '(tooltip-mode nil))
 
@@ -83,3 +83,6 @@
   "Fundamental mode that understands ansi colors."
   (require 'ansi-color)
   (ansi-color-apply-on-region (point-min) (point-max)))
+
+;; enable windmove keybindings (Shift-up/down/left/right to switch between windows)
+(windmove-default-keybindings)
