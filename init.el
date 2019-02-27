@@ -14,9 +14,11 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(inhibit-startup-screen t)
- '(scroll-bar-mode nil)
- ;; '(if (display-graphic-p) (tool-bar-mode nil) (message "Not in GUI!"))
  '(menu-bar-mode nil)
+ '(package-selected-packages
+   (quote
+    (json-navigator protobuf-mode dockerfile-mode docker-tramp)))
+ '(scroll-bar-mode nil)
  '(tooltip-mode nil))
 
 
