@@ -49,8 +49,10 @@
     (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))))
 (package-initialize)
 
-;; load the llvm-mode.el package
+;; load the llvm related package
 (require 'llvm-mode)
+(require 'mlir-mode)
+(require 'tablegen-mode)
 
 ;; bind "C-c h" to call org-html-export-to-html
 (global-set-key (kbd "C-c h") 'org-html-export-to-html)
