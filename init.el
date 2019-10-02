@@ -50,6 +50,7 @@
 (package-initialize)
 
 ;; load the llvm related package
+(require 'cmake-mode)
 (require 'llvm-mode)
 (require 'mlir-mode)
 (require 'tablegen-mode)
