@@ -54,6 +54,7 @@
 (require 'llvm-mode)
 (require 'mlir-mode)
 (require 'tablegen-mode)
+(require 'bazel-mode)
 
 ;; bind "C-c h" to call org-html-export-to-html
 (global-set-key (kbd "C-c h") 'org-html-export-to-html)
