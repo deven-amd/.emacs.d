@@ -92,3 +92,6 @@
 
 ;; enable windmove keybindings (Shift-up/down/left/right to switch between windows)
 (windmove-default-keybindings)
+
+;; set python indentation to 2
+(add-hook 'python-mode-hook '(lambda () (setq python-indent-offset 2)))
